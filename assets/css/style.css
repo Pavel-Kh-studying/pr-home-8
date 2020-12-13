@@ -1,0 +1,38 @@
+@import "./bootstrap-grid.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.features-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.features-item h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 45px 0 10px;
+}
+
+.features-item h3::before {
+  content: url("../img/pickaxe.svg");
+  position: absolute;
+  top: -45px;
+  right: calc(50% - 12px);
+}
+
+.features-item p {
+  color: gray;
+  text-align: center;
+}
